@@ -13,7 +13,7 @@ class Product(models.Model):
     cost = models.DecimalField(max_digits=10, decimal_places=2)
 
     def __str__(self):
-        return f"Название курса: {self.name}; Автор ккурса: {self.author.name}; Цена курса {self.cost}"
+        return f"Название курса: {self.name}; Автор курса: {self.author.name}; Цена курса {self.cost}"
 
 
 class Lesson(models.Model):
